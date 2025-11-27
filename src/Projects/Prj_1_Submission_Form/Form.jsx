@@ -156,7 +156,7 @@ const Form = () => {
 
 
         {/*  RIGHT SECTION (FORM)*/}
-        <div className="h-full w-full bg-[url('lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-end rounded-[30px] pl-[40%]">
+        <div className="h-full w-full bg-[#1E2930] bg-no-repeat bg-cover bg-center flex items-center justify-end rounded-[30px] pl-[40%]">
           {/* Increased width slightly to accommodate 2-column rows, reduced padding */}
           <div className="formcontainer flex flex-col items-start p-4 mr-10 w-[450px] bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl">
             <form
