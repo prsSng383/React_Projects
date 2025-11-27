@@ -1,71 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowRight, Play, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo1 from './assets/logo1.jpg'
+import logo2 from './assets/logo2.png'
 
 const timelineData = [
   {
     id: 1,
     title: "FORMS", // Long Title Test Case
     subtitle: "The journey begins with ReactJS.",
-    image: "/src/assets/Screenshot 2025-11-27 100641.png",
+    image: logo2,
     bg: "/src/assets/Screenshot 2025-11-27 100641.png",
     path:"prj_1"
-  },
-  {
-    id: 2,
-    title: "Ascent",
-    subtitle: "Climbing higher to find new perspectives.",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    id: 3,
-    title: "Outbound",
-    subtitle: "Enjoying the outdoors is a thing of life.",
-    image: "https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2073&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    id: 4,
-    title: "Summit",
-    subtitle: "Reaching the peak was only the beginning.",
-    image: "https://images.unsplash.com/photo-1516939884455-1445c8652f83?q=80&w=2070&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1516939884455-1445c8652f83?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    id: 5,
-    title: "Expedition",
-    subtitle: "Charting unknown territories in the wild.",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop"
-  },
-  {
-    id: 6,
-    title: "Highland",
-    subtitle: "Where the air is thin and spirit is high.",
-    image: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2076&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2076&auto=format&fit=crop"
-  },
-  {
-    id: 7,
-    title: "Horizon",
-    subtitle: "Chasing the sun across the endless peaks.",
-    image: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=2070&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    id: 8,
-    title: "Alpine",
-    subtitle: "Surrounded by the giants of the earth.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    id: 9,
-    title: "Zenith",
-    subtitle: "The ultimate point of the journey.",
-    image: "https://images.unsplash.com/photo-1533240332313-0db49b459ad6?q=80&w=2070&auto=format&fit=crop",
-    bg: "https://images.unsplash.com/photo-1533240332313-0db49b459ad6?q=80&w=2070&auto=format&fit=crop"
   },
 ];
 
@@ -170,7 +116,7 @@ const List = () => {
       {/* Fixed Background */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <img 
-          src="\src\assets\lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" 
+          src={logo1} 
           alt="Background" 
           className="w-full h-full opacity-70 grayscale contrast-120"
         />

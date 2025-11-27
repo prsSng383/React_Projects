@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Terminal, Database, CheckCircle2, ArrowRight } from "lucide-react";
 
+
 const Form = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
