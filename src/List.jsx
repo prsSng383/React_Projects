@@ -3,6 +3,7 @@ import { ArrowRight, Play, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logo1 from './assets/logo1.jpg'
 import logo2 from './assets/logo2.png'
+import logo3 from './assets/logo3.png'
 
 const timelineData = [
   {
@@ -12,6 +13,14 @@ const timelineData = [
     image: logo2,
     bg: "/src/assets/Screenshot 2025-11-27 100641.png",
     path:"prj_1"
+  },
+  {
+    id: 2,
+    title: "JOKES", // Long Title Test Case
+    subtitle: "The journey continues with ReactJS.",
+    image: logo3,
+    bg: "/src/assets/Screenshot 2025-11-27 100641.png",
+    path:"jokes"
   },
 ];
 
