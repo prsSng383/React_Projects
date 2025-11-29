@@ -5,9 +5,7 @@ const Jokes = () => {
   const [jokes, setJokes] = useState(
     <p className="relative">
       Coming right up! Just click the button below{" "}
-      <span className="text-4xl absolute top-[100%] left-[40%]">
-        &#128514;
-      </span>
+      <span className="text-4xl absolute top-[100%] left-[40%]">&#128514;</span>
     </p>
   );
 
@@ -25,14 +23,15 @@ const Jokes = () => {
 
   return (
     <div className="min-h-screen w-full bg-[#161D26] text-white flex items-center justify-center p-4 font-sans">
-
       {/* Main wrapper → MOBILE = column | DESKTOP = clipped row */}
-      <div className="h-[90vh] w-[95%] max-w-[1400px] bg-gray-800 rounded-[30px]
+      <div
+        className="h-[90vh] w-[95%] max-w-[1400px] bg-gray-800 rounded-[30px]
                       flex flex-col md:flex-row 
-                      relative shadow-2xl overflow-hidden">
-
+                      relative shadow-2xl overflow-hidden"
+      >
         {/* LEFT SECTION */}
-        <div className="
+        <div
+          className="
           w-full md:w-[45%] 
           h-[20vh] md:h-full 
           bg-white text-[#19200B] 
@@ -43,11 +42,10 @@ const Jokes = () => {
                     
           /* disable clip-path on small screens */
           md:[clip-path:polygon(0%_0%,85%_0%,100%_100%,0%_100%)]
-        ">
-
+        "
+        >
           {/* Content */}
           <div className="h-full flex flex-col justify-center p-10 md:justify-between md:pr-24 relative">
-            
             {/* Visible on all screens */}
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-teal-600 font-bold tracking-widest text-xs uppercase">
@@ -74,7 +72,14 @@ const Jokes = () => {
                     Why this matters?
                   </h3>
                   <p className="text-gray-500 text-sm leading-relaxed mt-1">
-                    <strong>fetch()</strong> changes your app from static to dynamic and alive.
+                    <strong>fetch()</strong> is your bridge to the outside world
+                    of APIs. It’s how your application communicates, retrieves,
+                    and sends data in real time. Mastering it unlocks dynamic
+                    app behavior storing user inputs, updating UI from
+                    databases, managing authentication, and integrating with
+                    third-party services. Without solid control over fetch(),
+                    your app remains static and disconnected from the data it
+                    needs to feel truly alive.
                   </p>
                 </div>
               </div>
@@ -107,21 +112,27 @@ const Jokes = () => {
                   <span>Hooks: useState + fetch()</span>
                 </li>
               </ul>
+              <div className="mt-4 pt-4 border-t border-gray-700 flex justify-between items-center">
+                {" "}
+                <span className="text-xs text-gray-500">
+                  Status: Complete
+                </span>{" "}
+                <ArrowRight size={16} className="text-teal-400" />{" "}
+              </div>
             </div>
           </div>
-
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="
+        <div
+          className="
           w-full h-[80vh] md:h-full
           bg-linear-to-r from-[#333333] via-[#333333] to-[#c9dd18]
           rounded-b-[30px] md:rounded-r-[30px]
           flex items-center justify-center md:relative
-        ">
-
+        "
+        >
           <div className="h-[90%] w-[90%] md:w-[40%] flex flex-col items-center justify-center gap-10 px-5 rounded-2xl bg-transparent backdrop-blur-2xl bg-linear-120 from-[rgba(255,255,255,0.3)] to-[rgba(0,0,0,0.2)] bg-size-[30px_30px] md:absolute right-[10%]">
-            
             <h1 className="text-3xl md:text-4xl font-bold text-gray-100 bg-green-950 px-2 border border-t-2 border-b-2">
               JOKES!
             </h1>
@@ -140,9 +151,7 @@ const Jokes = () => {
             >
               Generate new!
             </button>
-
           </div>
-
         </div>
       </div>
     </div>
